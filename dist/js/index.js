@@ -30,6 +30,7 @@ $(document).ready(function () {
   playGame();
 
   $(".btn-reset").click(function () {
+    $(".result").text("");
     $(".total-score").text(0);
     $(".disabled").attr("class", "btn btn-roll");
     $(".btn-roll").click(function () {
