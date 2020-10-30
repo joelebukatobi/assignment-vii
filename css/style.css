@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Assistant", sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/background-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 85vh;
+  width: 100vh;
+  background-color: rgba(235, 77, 77, 0.7);
+  /* -webkit-box-shadow: 0px 0px 15px -1px rgba(176, 176, 176, 1);
+  -moz-box-shadow: 0px 0px 15px -1px rgba(176, 176, 176, 1);
+  box-shadow: 0px 0px 15px -1px rgba(176, 176, 176, 1); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.8em;
+}
+
+.box > * {
+  margin-bottom: 1.6rem;
+}
+
+.player-name {
+  font-weight: 200;
+  color: #ffffff;
+  font-size: 3.7rem;
+}
+
+.dice-value {
+  font-size: 5em;
+  color: #ffffff;
+  font-weight: 200;
+}
+
+.dice-image {
+  width: 15em;
+  height: 15em;
+}
+
+.score-box {
+  /* height: 5rem; */
+  padding: 0.8em;
+}
+
+.score-box p {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.1em;
+  text-align: center;
+  color: #ffffff;
+}
+.btn {
+  outline: none;
+  border: none;
+  padding: 0.8em 2.4em;
+  font-size: 1.6em;
+  cursor: pointer;
+  font-family: "Assistant", sans-serif;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+.btn-roll:hover,
+.btn-reset:hover {
+  color: #ffffff;
+  background-color: transparent;
+  border: 0.1em solid #ffffff;
+  padding: 0.7em 2.3em;
+}
+
+.disabled {
+  outline: none;
+  border: none;
+  padding: 0.8em 2.4em;
+  font-size: 1.6em;
+  cursor: pointer;
+  font-family: "Assistant", sans-serif;
+  text-transform: uppercase;
+  border-radius: 0;
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.btn:not(:first-child) {
+  margin-left: 0.8em;
+}
+
+.result {
+  margin-top: 0.4em;
+  color: #ffffff;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 5em;
+}
